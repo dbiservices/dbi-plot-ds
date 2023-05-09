@@ -85,7 +85,7 @@ Generic plot script to quickly visualize graphically time-series, categorical or
 Also, plot the data's tentative statistical distributions (normal, poisson, exponential, and uniform).
 In addition, the distfit package is used for exploring even more theoretical probability distributions.
 Usage:
-   genplot.py --files=|-f file{,file} {--files=file{,file}}
+   plot-ds.py --files=|-f file{,file} {--files=file{,file}}
               [--supertitle=|-t ...]
               [--titles=|-tt title1{,title2}]
               [--save-as=|-s [!]file{,[!]file}]
@@ -160,9 +160,9 @@ Conversely, it the individual and group graphs are not necessary, they can be pr
 It the optional --log is present, informative messages will be sent to stdout along with a dump of the program's data structures used to store the data sets and parameters.
 Since thet are named, parameters can be given in any order.
 Examples of invocation:
-   genplot.py --files=data_1,data_2,data_3 --files=data_2,data_4 --files=data5 --save-as=graph1,,graph2 --supertitle="Performances" --geometry=1x3 save-all_as=!./performances.svg --save-all-as-format=svg
-   genplot.py --files=xxs,yys --files=yys,zzs --save-as='!pie1,pie2' --pie-geometries=1x2 --save-as-format=pdf,svg,2 --geometry=1x2 -t the_title --save-all-as='!qqqq' --save-all-as-format=pdf --crosshair-cursor --interactive --no-stats
-   genplot.py --files=time_to_render1.csv,time_to_render2.csv --files=time_to_render1_50.csv,time_to_render2_50.csv --titles=graph_group_1,graph_group_2 --save-as='!both1' --save-as-format=pdf,svg,2 --geometry=1x1 -t the_title --save-all-as='!qqqq' --save-all-as-format=pdf --crosshair-cursor --interactive
+   plot-ds.py --files=data_1,data_2,data_3 --files=data_2,data_4 --files=data5 --save-as=graph1,,graph2 --supertitle="Performances" --geometry=1x3 save-all_as=!./performances.svg --save-all-as-format=svg
+   plot-ds.py --files=xxs,yys --files=yys,zzs --save-as='!pie1,pie2' --pie-geometries=1x2 --save-as-format=pdf,svg,2 --geometry=1x2 -t the_title --save-all-as='!qqqq' --save-all-as-format=pdf --crosshair-cursor --interactive --no-stats
+   plot-ds.py --files=time_to_render1.csv,time_to_render2.csv --files=time_to_render1_50.csv,time_to_render2_50.csv --titles=graph_group_1,graph_group_2 --save-as='!both1' --save-as-format=pdf,svg,2 --geometry=1x1 -t the_title --save-all-as='!qqqq' --save-all-as-format=pdf --crosshair-cursor --interactive
    """))
    parser.add_argument('--files', '-f',
                        dest = "input_files_group",
