@@ -3,7 +3,7 @@
 February 2023, cec@dbi-services.com:
 Generic plot script to quickly visualize graphically time-series data;
 #See on-line help:
-   genplot.py --help
+   plot-ds.py --help
 """
 # imports;
 from typing import Final
